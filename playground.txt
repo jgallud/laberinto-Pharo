@@ -1,0 +1,11 @@
+juego:=JuegoLaberinto new.
+
+fm:=CreatorLaberintoComposite new.
+juego laberinto:fm fabricarLaberinto2Hab2Arm.
+
+hab:=juego laberinto obtenerHabitacion: 1.
+arm:=hab hijos at:1.
+bicho:=fm crearBichoEstrategia: (fm fabricarAgresivo) posicion: hab.
+juego agregarBicho:bicho.
+juego lanzarHiloBichos.
+juego terminarHiloBichos
