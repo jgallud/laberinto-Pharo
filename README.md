@@ -11,4 +11,6 @@ Versión 13 de la SolucionLaberinto importada de VisualWorks para Pharo. Esta ve
 
 Como en Pharo no existe la colección List, hay que incluirla como subclase de OrderedCollection.
 
+También es necesario instalar la librería NeoJSON (https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/NeoJSON/NeoJSON.html)
+
 
