@@ -8,6 +8,7 @@ Versión 13 de la SolucionLaberinto importada de VisualWorks para Pharo. Esta ve
 - Bridge: las habitaciones "tienen" forma
 - Personaje y Bichos (agresivo, golismero y vigilante)
 - Los bichos funcionan como hilos independientes
+- Los bichos y el personaje se pueden atacar (personaje ataca)
 
 Como en Pharo no existe la colección List, hay que incluirla como subclase de OrderedCollection.
 
