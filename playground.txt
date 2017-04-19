@@ -1,11 +1,9 @@
-juego:=JuegoLaberinto new.
+archivo:='ruta-al-archivo-JSON\rectangulo4habBH.json'.
 
-fm:=CreatorLaberintoComposite new.
-juego laberinto:fm fabricarLaberinto2Hab2Arm.
+director:=DPDirector new procesar:archivo.
+juego:=director obtenerJuego.
 
-hab:=juego laberinto obtenerHabitacion: 1.
-arm:=hab hijos at:1.
-bicho:=fm crearBichoEstrategia: (fm fabricarAgresivo) posicion: hab.
-juego agregarBicho:bicho.
+juego inspect.
+
 juego lanzarHiloBichos.
 juego terminarHiloBichos
